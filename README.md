@@ -22,3 +22,12 @@ LIRI-Bot is a Node app. LIRI will search Spotify for songs, Bands in Town for co
         'SPOTIFY_SECRET=your-spotify-secret-here'
 
 
+# Liri Function
+
+These are the functions available to run to pull data.
+    * concert-this
+    * spotify-this-song
+    * movie-this
+    * do-what-it-says
+
+
