@@ -100,7 +100,29 @@ This will take the text inside of random.text and use it to call the first comma
 
 This would call the spotify-this-song function and pass in "I Want is That Way" as the song for search. 
 
+
 <!-- Screen shot/video to go here -->
 
+
 ## Link to repository
+
 [LIRI Bot](https://github.com/hungle913/liri-node-app.git)
+
+
+## Technologies Used
+
+    * NodeJS
+
+    * JavaScript
+
+    * NPM Spotify API
+
+    * NPM Axios
+
+    * OMDB API
+
+    *Bands In Town API
+
+    *NPM Moment
+
+    *NPM DotEnv
