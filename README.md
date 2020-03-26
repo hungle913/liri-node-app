@@ -106,7 +106,7 @@ This would call the spotify-this-song function and pass in "I Want is That Way" 
 
 ## Link to repository
 
-# **[LIRI Bot](https://github.com/hungle913/liri-node-app.git)**
+### **[LIRI Bot](https://github.com/hungle913/liri-node-app.git)**
 
 
 ## Technologies Used
@@ -126,3 +126,8 @@ This would call the spotify-this-song function and pass in "I Want is That Way" 
     *NPM Moment
 
     *NPM DotEnv
+
+
+## Author
+
+**Hung Le**
