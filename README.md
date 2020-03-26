@@ -67,7 +67,7 @@ This will show the following information about each song in your terminal/bash w
     * The album that the song is from
 
 
-* node liri.js omdb 'movie name'
+* node liri.js movie-this 'movie name'
 
 This will show the following information about each movie in your terminal/bash window.
 
@@ -90,4 +90,12 @@ This will show the following information about each movie in your terminal/bash 
     * If no movie is provided then the movie "Mr. Nobody." will be searched instead.
 
 
-    
+* node liri.js do-what-it-says
+
+This will take the text inside of random.text and use it to call the first command with the part as it's parameter.
+
+    * Currently in random.txt, the following is listed.
+
+        spotify-this-song,"I Want it That Way"
+
+This would call the spotify-this-song function and pass in "I Want is That Way" as the song for search. 
