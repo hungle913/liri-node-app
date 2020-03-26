@@ -6,3 +6,8 @@ require("dotenv").config();
 
 var keys = require("./keys");
 
+// variable to access keys
+
+var spotify = new Spotify(keys.spotify);
+
+
