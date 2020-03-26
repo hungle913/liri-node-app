@@ -10,11 +10,17 @@ LIRI-Bot is a Node app. LIRI will search Spotify for songs, Bands in Town for co
 
 1. Clone the repository
 2. Run npm install. This will install the 4 following packages...
+
     -Node-Spotify-API
+
     -Axios (This module will be used to get the IMDB and BandsInTown API data)
+
     -Moment
+
     -DotENV
+
 3. Create a .env file in the same directory as the rest of the files. In the .env file please add the following -
+
         '# Spotify API keys'
 
         'SPOTIFY_ID=your-spotify-ID-here'
@@ -25,9 +31,13 @@ LIRI-Bot is a Node app. LIRI will search Spotify for songs, Bands in Town for co
 # Liri Function
 
 These are the functions available to run to pull data.
+
     * concert-this
+
     * spotify-this-song
+
     * movie-this
+
     * do-what-it-says
 
 
