@@ -10,4 +10,8 @@ var keys = require("./keys");
 
 var spotify = new Spotify(keys.spotify);
 
+// variables for user inputs
+
+var command = process.argv[2];
+var input = process.argv[3];
 
