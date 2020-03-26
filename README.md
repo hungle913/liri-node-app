@@ -111,21 +111,31 @@ This would call the spotify-this-song function and pass in "I Want is That Way" 
 
 ## Technologies Used
 
+    * GitHub - File Repository
+
+    * Visual Studio Code - Text Editor
+
     * NodeJS
 
     * JavaScript
 
-    * NPM Spotify API
+APIs:
 
-    * NPM Axios
+    * Spotify (https://developer.spotify.com/dashboard/)
 
-    * OMDB API
+    * NPM Spotify API (https://www.npmjs.com/package/node-spotify-api)
 
-    *Bands In Town API
+    * OMDB API (http://www.omdbapi.com/)
 
-    *NPM Moment
+    * Bands In Town API (http://www.artists.bandsintown.com/bandsintown-api)
 
-    *NPM DotEnv
+NPM Packages:
+
+    * NPM Axios (https://www.npmjs.com/package/axios)
+
+    * NPM Moment (https://www.npmjs.com/package/moment)
+
+    * NPM DotEnv (https://www.npmjs.com/package/dotenv)
 
 
 ## Author
