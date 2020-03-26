@@ -111,31 +111,31 @@ This would call the spotify-this-song function and pass in "I Want is That Way" 
 
 ## Technologies Used
 
-    * GitHub - File Repository
+* GitHub - File Repository
 
-    * Visual Studio Code - Text Editor
+* Visual Studio Code - Text Editor
 
-    * NodeJS
+* NodeJS
 
-    * JavaScript
+* JavaScript
 
-APIs:
+**APIs:**
 
-    * Spotify [Spotify Developer](https://developer.spotify.com/dashboard/)
+* **Spotify** [Spotify Developer](https://developer.spotify.com/dashboard/)
 
-    * NPM Spotify API [Spotify API](https://www.npmjs.com/package/node-spotify-api)
+* **NPM Spotify API** [Spotify API](https://www.npmjs.com/package/node-spotify-api)
 
-    * OMDB API [OMDB API](http://www.omdbapi.com/)
+* **OMDB API** [OMDB API](http://www.omdbapi.com/)
 
-    * Bands In Town API [Bands In Town API](http://www.artists.bandsintown.com/bandsintown-api)
+* **Bands In Town API** [Bands In Town API](http://www.artists.bandsintown.com/bandsintown-api)
 
-NPM Packages:
+**NPM Packages:**
 
-    * NPM Axios [NPM Axios](https://www.npmjs.com/package/axios)
+* **NPM Axios** [NPM Axios](https://www.npmjs.com/package/axios)
 
-    * NPM Moment [NPM Moment](https://www.npmjs.com/package/moment)
+* **NPM Moment** [NPM Moment](https://www.npmjs.com/package/moment)
 
-    * NPM DotEnv [NPM DotEnv](https://www.npmjs.com/package/dotenv)
+* **NPM DotEnv** [NPM DotEnv](https://www.npmjs.com/package/dotenv)
 
 
 ## Author
