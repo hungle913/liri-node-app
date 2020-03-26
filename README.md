@@ -6,7 +6,7 @@
 LIRI-Bot is a Node app. LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies. LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and RecognitionInterface. LIRI is a command line node app that takes in parameters provided by the user and gives back data requested. 
 
 
-# Liri Setup
+## LIRI Setup
 
 1. Clone the repository
 2. Run npm install. This will install the 4 following packages...
@@ -28,7 +28,7 @@ LIRI-Bot is a Node app. LIRI will search Spotify for songs, Bands in Town for co
     'SPOTIFY_SECRET=your-spotify-secret-here'
 
 
-# Liri Function
+## LIRI Function
 
 These are the functions available to run to pull data.
 
@@ -41,7 +41,7 @@ These are the functions available to run to pull data.
     * do-what-it-says
 
 
-# How to use the above functions in your terminal to pull data.
+## How to use the above functions in your terminal to pull data.
 
 * node liri.js concert-this 'concert or band name'
 
