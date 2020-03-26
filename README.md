@@ -67,3 +67,27 @@ This will show the following information about each song in your terminal/bash w
     * The album that the song is from
 
 
+* node liri.js omdb 'movie name'
+
+This will show the following information about each movie in your terminal/bash window.
+
+    * Title of the Movie
+
+    * Year the Movie was Released
+
+    * The IMDB Rating
+
+    * Country the Movie was made in
+
+    * Language the Movie is in
+
+    * Plot of the Movie
+
+    * Actors in the Movie
+
+    * The Rotten Tomatoes Rating
+
+    * If no movie is provided then the movie "Mr. Nobody." will be searched instead.
+
+
+    
