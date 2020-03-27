@@ -39,12 +39,13 @@ switch (command) {
         break;
 };
 
-// start function for concert-this
+// Start function for concert-this
 
 function concertThis(input) {
     var artist = input;
     axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp").then(function (response) {
         for (var i = 0; i < response.data.length; i++) {
+            // console.log(response.data);
             console.log("Name of the venue:", response.data[i].venue.name);
             console.log("Venue location:", response.data[i].venue.city);
             var eventDate = moment(response.data[i].datetime).format('MM/DD/YYYY');
@@ -52,4 +53,19 @@ function concertThis(input) {
         };
     });
 };
+
+// Start function for spotify-this-song
+
+function spotifySong(input) {
+    
+// Search paramters copied from Spotify API example.
+
+    spotify.search({ type: 'track', query: input }, function(err, data) {
+        if (err) {
+          return console.log('Error occurred: ' + err);
+        }
+
+        console.log(data);
+    });
+}
 
