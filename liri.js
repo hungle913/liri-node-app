@@ -26,17 +26,22 @@ var moment = require("moment");
 
 switch (command) {
     case "concert-this":
-        concertThis(value);
+        concertThis(input);
         break;
     case "spotify-this-song":
-        spotifySong(value);
+        spotifySong(input);
         break;
     case "movie-this":
-        movieThis(value);
+        movieThis(input);
         break;
     case "do-what-it-says":
-        doThis(value);
+        doThis(input);
         break;
 };
 
+// start function for concert-this
+
+function concertThis(input) {
+    
+}
 
