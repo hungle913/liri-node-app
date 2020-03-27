@@ -15,3 +15,11 @@ var spotify = new Spotify(keys.spotify);
 var command = process.argv[2];
 var input = process.argv[3];
 
+// require packages
+
+var fs = require("fs");
+var Spotify = require('node-spotify-api');
+var axios = ("axios");
+var moment = ("moment");
+
+
