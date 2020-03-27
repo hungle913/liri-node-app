@@ -19,7 +19,7 @@ var input = process.argv[3];
 
 var fs = require("fs");
 var Spotify = require('node-spotify-api');
-var axios = ("axios");
-var moment = ("moment");
+var axios = require("axios");
+var moment = require("moment");
 
 
