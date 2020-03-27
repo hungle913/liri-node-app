@@ -64,8 +64,8 @@ function spotifySong(input) {
         if (err) {
             return console.log('Error occurred: ' + err);
         }
-        console.log("Song Name: " + data.tracks.items[0].album.name);
-        
+        console.log("Artist: " + data.tracks.items[0].album.artists[0].name);
+        console.log("Song Name: " + data.tracks.items[0].album.name);        
         
     });
 }
