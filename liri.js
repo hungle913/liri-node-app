@@ -8,6 +8,7 @@ var keys = require("./keys");
 
 // variable to access keys
 
+var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 
 // variables for user inputs
@@ -18,7 +19,6 @@ var input = process.argv[3];
 // require packages
 
 var fs = require("fs");
-var Spotify = require('node-spotify-api');
 var axios = require("axios");
 var moment = require("moment");
 
@@ -42,7 +42,11 @@ switch (command) {
 // start function for concert-this
 
 function concertThis(input) {
+    var artist = input;
     axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp").then(function (response) {
+
+        console.log("Name of the venue:", response.data[0].venue.name);
+        
 
     });
 };
