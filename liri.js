@@ -44,10 +44,10 @@ switch (command) {
 function concertThis(input) {
     var artist = input;
     axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp").then(function (response) {
+        for (var i = 0; i < response.data.length; i++) {
+            console.log("Name of the venue:", response.data[0].venue.name);
 
-        console.log("Name of the venue:", response.data[0].venue.name);
-        
-
+        }
     });
 };
 
