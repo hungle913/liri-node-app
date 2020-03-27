@@ -65,7 +65,9 @@ function spotifySong(input) {
             return console.log('Error occurred: ' + err);
         }
         console.log("Artist: " + data.tracks.items[0].album.artists[0].name);
-        console.log("Song Name: " + data.tracks.items[0].album.name);        
+        console.log("Song: " + input);
+        console.log("Album: " + data.tracks.items[0].album.name);   
+        console.log("Preview link of song: " + data.tracks.items[0].album.external_urls.spotify);     
         
     });
 }
