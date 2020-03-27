@@ -42,6 +42,8 @@ switch (command) {
 // start function for concert-this
 
 function concertThis(input) {
-    
-}
+    axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp").then(function (response) {
+
+    });
+};
 
