@@ -62,10 +62,11 @@ function spotifySong(input) {
 
     spotify.search({ type: 'track', query: input }, function(err, data) {
         if (err) {
-          return console.log('Error occurred: ' + err);
+            return console.log('Error occurred: ' + err);
         }
-
-        console.log(data);
+        console.log("Song Name: " + data.tracks.items[0].album.name);
+        
+        
     });
 }
 
