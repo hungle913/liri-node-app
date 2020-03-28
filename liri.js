@@ -66,6 +66,7 @@ function concertThis(input) {
             console.log("Venue location:", response.data[i].venue.city);
             var eventDate = moment(response.data[i].datetime).format('MM/DD/YYYY');
             console.log("Date of the Event:", eventDate);
+            console.log("-------------------------------------------------------");
         };
     });
 };
@@ -83,7 +84,8 @@ function spotifySong(input) {
         }
         console.log("Artist: " + data.tracks.items[0].album.artists[0].name);
         console.log("Album: " + data.tracks.items[0].album.name);   
-        console.log("Preview link of song: " + data.tracks.items[0].album.external_urls.spotify);     
+        console.log("Preview link of song: " + data.tracks.items[0].album.external_urls.spotify);  
+        console.log("-------------------------------------------------------");   
     });
 }
 
