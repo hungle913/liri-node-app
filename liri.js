@@ -22,6 +22,12 @@ var fs = require("fs");
 var axios = require("axios");
 var moment = require("moment");
 
+// create variables for default if missing info
+
+var defaultConcert = "Celine Dion"
+var defaultSpotify = "The Sign"
+var defaultMovie = "Mr. Nobody"
+
 // add switch statements to execute code block
 
 switch (command) {
@@ -43,6 +49,7 @@ switch (command) {
 
 function concertThis(input) {
     var artist = input;
+
     axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp").then(function (response) {
         for (var i = 0; i < response.data.length; i++) {
             // console.log(response.data);
@@ -58,7 +65,7 @@ function concertThis(input) {
 
 function spotifySong(input) {
     var songInput = input;
-    
+
 // Search paramters copied from Spotify API example.
 
     spotify.search({ type: 'track', query: songInput }, function(err, data) {
