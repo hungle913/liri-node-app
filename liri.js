@@ -92,3 +92,8 @@ function spotifySong(input) {
 
 // Start function for movie-this
 
+function movieThis(input) {
+    var movieInput = input;
+
+    
+}
