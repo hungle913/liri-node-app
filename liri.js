@@ -79,17 +79,16 @@ function spotifySong(input) {
 
 // Search paramters copied from Spotify API example.
 
-    spotify.search({ type: 'track', query: songInput }, function(err, data) {
-        if (err) {
-            return console.log('Error occurred: ' + err);
-        }
+    spotify.search({ type: 'track', query: songInput }).then(function(response) {
+        for (var i = 0; i < 20; i++) {
         console.log("-------------------------------------------------------");
-        console.log("Artist: " + data.tracks.items[0].album.artists[0].name);
-        console.log("Album: " + data.tracks.items[0].album.name);   
-        console.log("Preview link of song: " + data.tracks.items[0].album.external_urls.spotify);  
-        console.log("-------------------------------------------------------");   
+        console.log("Artist: " + response.tracks.items[i].album.artists[0].name);
+        console.log("Album: " + response.tracks.items[i].album.name);   
+        console.log("Preview link of song: " + response.tracks.items[i].album.external_urls.spotify);  
+        console.log("-------------------------------------------------------"); 
+        };  
     });
-}
+};
 
 // Start function for movie-this
 
