@@ -32,12 +32,21 @@ var defaultMovie = "Mr. Nobody"
 
 switch (command) {
     case "concert-this":
+        if(input===undefined) {
+            input = defaultConcert;
+        }
         concertThis(input);
         break;
     case "spotify-this-song":
+        if(input===undefined) {
+            input = defaultSpotify;
+        }
         spotifySong(input);
         break;
     case "movie-this":
+        if(input===undefined) {
+            input = defaultMovie;
+        }
         movieThis(input);
         break;
     case "do-what-it-says":
