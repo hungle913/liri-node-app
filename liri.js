@@ -112,9 +112,17 @@ function movieThis(input) {
         console.log("Movie Plot: " + response.data.Plot);
         console.log("Movie Actors: " + response.data.Actors);
         console.log("-------------------------------------------------------");
-        if (input === "Mr. Nobody") {
-            Console.log("If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/");
-            Console.log("It's on Netflix!");
-        }
     });
+    if (input === "Mr. Nobody") {
+        console.log("-------------------------------------------------------");
+        console.log("If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/");
+        console.log("It's on Netflix!");
+        console.log("-------------------------------------------------------");
+    }
 };
+
+function doWhatItSays() {
+    fs.readFile("random.txt", "utf8", function (err, data) {
+
+    });
+}
