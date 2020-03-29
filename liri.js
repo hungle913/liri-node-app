@@ -121,8 +121,10 @@ function movieThis(input) {
     }
 };
 
-function doWhatItSays() {
+function doThis() {
     fs.readFile("random.txt", "utf8", function (err, data) {
-
+        // Then split it by commas (to make it more readable)
+        var dataArr = data.split(",");
+        console.log(dataArr);
     });
 }
