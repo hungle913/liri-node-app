@@ -107,6 +107,7 @@ function movieThis(input) {
         console.log("Year of Release: " + response.data.Year);
         console.log("IMDB Rating: " + response.data.imdbRating);
         console.log("Rotten Tomatoes Rating: " + response.data.Ratings[1].Value);
+        console.log("Country Movie was Produced: " + response.data.Country);
         console.log("-------------------------------------------------------");
     });
 }    
