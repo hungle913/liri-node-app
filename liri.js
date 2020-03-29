@@ -101,6 +101,7 @@ function movieThis(input) {
 
     axios.get("https://www.omdbapi.com/?t=" + input + "&y=&plot=short&apikey=trilogy")
     .then(function(response) {
+        console.log(response.data);
 
 
     });
