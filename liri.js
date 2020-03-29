@@ -93,12 +93,12 @@ function spotifySong(input) {
     });
   };
   
-  // Start function for movie-this
+// Start function for movie-this
   
-  function movieThis(input) {
+function movieThis(input) {
     var movieInput = input;
   
-  //search parameters for movies    
+//search parameters for movies    
   
     axios.get("https://www.omdbapi.com/?t=" + input + "&y=&plot=short&apikey=trilogy")
     .then(function(response) {
@@ -123,7 +123,7 @@ function spotifySong(input) {
     }
   };
   
-  function doThis() {
+function doThis() {
     fs.readFile("random.txt", "utf8", function (err, data) {
         // Then split it by commas (to make it more readable)
         var dataArr = data.split(",");
@@ -158,4 +158,4 @@ function spotifySong(input) {
         };
         
     });
-  }
+}
