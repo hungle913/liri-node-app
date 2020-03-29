@@ -103,7 +103,8 @@ function movieThis(input) {
     .then(function(response) {
         // console.log(response.data);
         console.log("-------------------------------------------------------");
-        console.log("Movie Title: " + response.data.Title)
-
+        console.log("Movie Title: " + response.data.Title);
+        console.log("Year of Release: " + response.data.Year);
+        console.log("-------------------------------------------------------");
     });
 }    
