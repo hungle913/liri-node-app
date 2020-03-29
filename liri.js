@@ -126,5 +126,11 @@ function doThis() {
         // Then split it by commas (to make it more readable)
         var dataArr = data.split(",");
         console.log(dataArr);
+
+        var command = dataArr[0];
+        var input = dataArr[1];
+
+
+        
     });
 }
