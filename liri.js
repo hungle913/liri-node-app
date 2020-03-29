@@ -59,6 +59,8 @@ switch (command) {
 function concertThis(input) {
     var artist = input;
 
+//Search parameters for concert info
+    
     axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp").then(function (response) {
         for (var i = 0; i < response.data.length; i++) {
             // console.log(response.data);
@@ -77,7 +79,7 @@ function concertThis(input) {
 function spotifySong(input) {
     var songInput = input;
 
-// Search paramters copied from Spotify API example.
+// Search paramters for songs.
 
     spotify.search({ type: 'track', query: songInput }).then(function(response) {
         for (var i = 0; i < 20; i++) {
@@ -95,5 +97,11 @@ function spotifySong(input) {
 function movieThis(input) {
     var movieInput = input;
 
-    
-}
+//search parameters for movies    
+
+    axios.get("https://www.omdbapi.com/?t=" + input + "&y=&plot=short&apikey=trilogy")
+    .then(function(response) {
+
+
+    });
+}    
