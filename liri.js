@@ -24,9 +24,9 @@ var moment = require("moment");
 
 // create variables for default if missing info
 
-var defaultConcert = "Celine Dion"
-var defaultSpotify = "The Sign"
-var defaultMovie = "Mr. Nobody"
+var defaultConcert = "Celine Dion";
+var defaultSpotify = "The Sign";
+var defaultMovie = "Mr. Nobody";
 
 // add switch statements to execute code block
 
@@ -112,5 +112,9 @@ function movieThis(input) {
         console.log("Movie Plot: " + response.data.Plot);
         console.log("Movie Actors: " + response.data.Actors);
         console.log("-------------------------------------------------------");
+        if (input === "Mr. Nobody") {
+            Console.log("If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/");
+            Console.log("It's on Netflix!");
+        }
     });
-}    
+};
