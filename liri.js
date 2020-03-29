@@ -109,6 +109,8 @@ function movieThis(input) {
         console.log("Rotten Tomatoes Rating: " + response.data.Ratings[1].Value);
         console.log("Country Movie was Produced: " + response.data.Country);
         console.log("Movie Language: " + response.data.Language);
+        console.log("Movie Plot: " + response.data.Plot);
+        console.log("Movie Actors: " + response.data.Actors);
         console.log("-------------------------------------------------------");
     });
 }    
