@@ -105,6 +105,7 @@ function movieThis(input) {
         console.log("-------------------------------------------------------");
         console.log("Movie Title: " + response.data.Title);
         console.log("Year of Release: " + response.data.Year);
+        console.log("IMDB Rating: " + response.data.imdbRating);
         console.log("-------------------------------------------------------");
     });
 }    
