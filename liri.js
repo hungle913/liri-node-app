@@ -64,12 +64,12 @@ function concertThis(input) {
     axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp").then(function (response) {
         // console.log(response.data[0].venue.name)
         for (var i = 0; i < response.data.length; i++) {
-            console.log("-------------------------------------------------------");
-            console.log("Name of the venue:", response.data[i].venue.name);
-            console.log("Venue location:", response.data[i].venue.city);
+            dataOutPut("-------------------------------------------------------");
+            dataOutPut("Name of the venue:", response.data[i].venue.name);
+            dataOutPut("Venue location:", response.data[i].venue.city);
             var eventDate = moment(response.data[i].datetime).format('MM/DD/YYYY');
-            console.log("Date of the Event:", eventDate);
-            console.log("-------------------------------------------------------");
+            dataOutPut("Date of the Event:", eventDate);
+            dataOutPut("-------------------------------------------------------");
         };
     });
 };
@@ -84,11 +84,11 @@ function spotifySong(input) {
   
     spotify.search({ type: 'track', query: songInput }).then(function(response) {
         for (var i = 0; i < 20; i++) {
-        console.log("-------------------------------------------------------");
-        console.log("Artist: " + response.tracks.items[i].album.artists[0].name);
-        console.log("Album: " + response.tracks.items[i].album.name);   
-        console.log("Preview link of song: " + response.tracks.items[i].album.external_urls.spotify);  
-        console.log("-------------------------------------------------------"); 
+        dataOutPut("-------------------------------------------------------");
+        dataOutPut("Artist: " + response.tracks.items[i].album.artists[0].name);
+        dataOutPut("Album: " + response.tracks.items[i].album.name);   
+        dataOutPut("Preview link of song: " + response.tracks.items[i].album.external_urls.spotify);  
+        dataOutPut("-------------------------------------------------------"); 
         };  
     });
   };
@@ -103,23 +103,23 @@ function movieThis(input) {
     axios.get("https://www.omdbapi.com/?t=" + input + "&y=&plot=short&apikey=trilogy")
     .then(function(response) {
         // console.log(response.data);
-        console.log("-------------------------------------------------------");
-        console.log("Movie Title: " + response.data.Title);
-        console.log("Year of Release: " + response.data.Year);
-        console.log("IMDB Rating: " + response.data.imdbRating);
-        console.log("Rotten Tomatoes Rating: " + response.data.Ratings[1].Value);
-        console.log("Country Movie was Produced: " + response.data.Country);
-        console.log("Movie Language: " + response.data.Language);
-        console.log("Movie Plot: " + response.data.Plot);
-        console.log("Movie Actors: " + response.data.Actors);
-        console.log("-------------------------------------------------------");
+        dataOutPut("-------------------------------------------------------");
+        dataOutPut("Movie Title: " + response.data.Title);
+        dataOutPut("Year of Release: " + response.data.Year);
+        dataOutPut("IMDB Rating: " + response.data.imdbRating);
+        dataOutPut("Rotten Tomatoes Rating: " + response.data.Ratings[1].Value);
+        dataOutPut("Country Movie was Produced: " + response.data.Country);
+        dataOutPut("Movie Language: " + response.data.Language);
+        dataOutPut("Movie Plot: " + response.data.Plot);
+        dataOutPut("Movie Actors: " + response.data.Actors);
+        dataOutPut("-------------------------------------------------------");
     });
   
     if (input === "Mr. Nobody") {
-        console.log("-------------------------------------------------------");
-        console.log("If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/");
-        console.log("It's on Netflix!");
-        console.log("-------------------------------------------------------");
+        dataOutPut("-------------------------------------------------------");
+        dataOutPut("If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/");
+        dataOutPut("It's on Netflix!");
+        dataOutPut("-------------------------------------------------------");
     }
   };
   
@@ -159,3 +159,4 @@ function doThis() {
         
     });
 }
+
