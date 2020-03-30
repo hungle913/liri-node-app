@@ -103,16 +103,16 @@ This would call the spotify-this-song function and pass in "I Want is That Way" 
 
 ## Screen Shots
 
-### concert-this
+#### concert-this command example
 ![concert-this](./images/concert-this.PNG "concert-this")
 
-### spotify-this-song
+#### spotify-this-song command example
 ![spotify-this-song](./images/spotify-this-song.PNG "spotify-this-song")
 
-### movie-this
+#### movie-this command example
 ![movie-this](./images/movie-this.PNG "movie-thiso")
 
-### do-what-it-says
+#### do-what-it-says command example
 ![do-what-it-says](./images/do-what-it-says.PNG "do-what-it-says")
 
 
