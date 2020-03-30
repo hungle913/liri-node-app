@@ -101,7 +101,19 @@ This will take the text inside of random.text and use it to call the first comma
 This would call the spotify-this-song function and pass in "I Want is That Way" as the song for search. 
 
 
-<!-- Screen shot/video to go here -->
+## Screen Shots
+
+### concert-this
+![concert-this](./images/concert-this.PNG "concert-this")
+
+### spotify-this-song
+![spotify-this-song](./images/spotify-this-song.PNG "spotify-this-song")
+
+### movie-this
+![movie-this](./images/movie-this.PNG "movie-thiso")
+
+### do-what-it-says
+![do-what-it-says](./images/do-what-it-says.PNG "do-what-it-says")
 
 
 ## Link to repository
