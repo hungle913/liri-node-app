@@ -16,6 +16,8 @@ var spotify = new Spotify(keys.spotify);
 var command = process.argv[2];
 var input = process.argv[3];
 
+//variable to log data to terminal and log.txt file
+
 var dataOutPut = function(data) {
     console.log(data)
 
