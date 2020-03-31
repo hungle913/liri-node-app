@@ -21,11 +21,11 @@ LIRI-Bot is a Node app. LIRI will search Spotify for songs, Bands in Town for co
 
 3. Create a .env file in the same directory as the rest of the files. In the .env file please add the following -
 
-    '# Spotify API keys'
+    **# Spotify API keys**
 
-    'SPOTIFY_ID=your-spotify-ID-here'
+    **SPOTIFY_ID=your-spotify-ID-here**
 
-    'SPOTIFY_SECRET=your-spotify-secret-here'
+    **SPOTIFY_SECRET=your-spotify-secret-here**
 
 
 ## LIRI Function
@@ -43,7 +43,7 @@ These are the functions available to run to pull data.
 
 ## How to use the above functions in your terminal to pull data.
 
-* node liri.js concert-this 'concert or band name'
+* **node liri.js concert-this 'concert or band name'**
 
 This will show the following information about each concert event to your terminal/bash window.
 
@@ -54,7 +54,7 @@ This will show the following information about each concert event to your termin
     * Date of the Venue
 
 
-*  node liri.js spotify-this-song 'song name'
+*  **node liri.js spotify-this-song 'song name'**
 
 This will show the following information about each song in your terminal/bash window.
 
@@ -67,7 +67,7 @@ This will show the following information about each song in your terminal/bash w
     * The album that the song is from
 
 
-* node liri.js movie-this 'movie name'
+* **node liri.js movie-this 'movie name'**
 
 This will show the following information about each movie in your terminal/bash window.
 
@@ -90,7 +90,7 @@ This will show the following information about each movie in your terminal/bash 
     * If no movie is provided then the movie "Mr. Nobody." will be searched instead.
 
 
-* node liri.js do-what-it-says
+* **node liri.js do-what-it-says**
 
 This will take the text inside of random.text and use it to call the first command with the part as it's parameter.
 
