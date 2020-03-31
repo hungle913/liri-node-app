@@ -16,6 +16,16 @@ var spotify = new Spotify(keys.spotify);
 var command = process.argv[2];
 var input = process.argv[3];
 
+var dataOutPut = function(data) {
+    console.log(data)
+
+    fs.appendFileSync("log.txt", "\r\n" + data, function (err){
+        if(err){
+            return console.log(err)
+        } 
+    })
+}
+
 // require packages
 
 var fs = require("fs");
@@ -54,6 +64,8 @@ switch (command) {
         break;
 };
 
+
+
 // Start function for concert-this
 
 function concertThis(input) {
@@ -63,12 +75,14 @@ function concertThis(input) {
     
     axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp").then(function (response) {
         // console.log(response.data[0].venue.name)
-        for (var i = 0; i < response.data.length; i++) {
+        for (var i = 0; i < 20; i++) {
+            // console.log("Name of the venue:", response.data[i].venue.name);
+
             dataOutPut("-------------------------------------------------------");
-            dataOutPut("Name of the venue:", response.data[i].venue.name);
-            dataOutPut("Venue location:", response.data[i].venue.city);
+            dataOutPut("Name of the venue:" + response.data[i].venue.name);
+            dataOutPut("Venue location:" + response.data[i].venue.city);
             var eventDate = moment(response.data[i].datetime).format('MM/DD/YYYY');
-            dataOutPut("Date of the Event:", eventDate);
+            dataOutPut("Date of the Event:" + eventDate);
             dataOutPut("-------------------------------------------------------");
         };
     });
