@@ -27,7 +27,7 @@ LIRI-Bot is a Node app. LIRI will search Spotify for songs, Bands in Town for co
 
     **SPOTIFY_SECRET=your-spotify-secret-here**
 
-    * **The Spotify API requires you sign up as a developer to generate the necessary credentials. You can follow these steps in order to generate a client id and client secret:**
+**The Spotify API requires you sign up as a developer to generate the necessary credentials. You can follow these steps in order to generate a client id and client secret:**
 
     * Step One: Visit https://developer.spotify.com/my-applications/#!/
 
