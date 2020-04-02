@@ -77,7 +77,7 @@ function concertThis(input) {
     
     axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp").then(function (response) {
         // console.log(response.data[0].venue.name)
-        for (var i = 0; i < 20; i++) {
+        for (var i = 0; i < 5; i++) {
             // console.log("Name of the venue:", response.data[i].venue.name);
 
             dataOutPut("-------------------------------------------------------");
@@ -99,7 +99,7 @@ function spotifySong(input) {
   // Search paramters for songs.
   
     spotify.search({ type: 'track', query: songInput }).then(function(response) {
-        for (var i = 0; i < 20; i++) {
+        for (var i = 0; i < 5; i++) {
         dataOutPut("-------------------------------------------------------");
         dataOutPut("Artist: " + response.tracks.items[i].album.artists[0].name);
         dataOutPut("Album: " + response.tracks.items[i].album.name);   
